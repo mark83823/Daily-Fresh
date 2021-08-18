@@ -1,0 +1,89 @@
+footer.footer{
+  background-color: #E2FABF;
+}
+
+footer.footer a.footer_logo{
+  display: inline-block;
+  /* border: 1px solid black; */
+  vertical-align: top;
+}
+
+footer.footer a.footer_logo > img{
+  /* border: 1px solid yellow; */
+  width: 226px;
+  height: 100px;
+  margin: 20px 100px 20px 20px
+}
+
+footer.footer div.footer_block{
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer.footer div.footer_block div.contact_info{
+  /* border: 1px solid purple; */
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 100px;
+  color: #232323;
+}
+
+footer.footer div.footer_block div.contact_info > ul{
+  /* border: 1px solid blue; */
+  list-style: none;
+  padding: 0;
+  line-height: 32px;
+}
+
+footer.footer div.footer_block div.search_list1{
+  /* border: 1px solid orange; */
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer.footer div.footer_block div.search_list1 > ul{
+  list-style: none;
+  padding: 0;
+}
+
+footer.footer div.footer_block div.search_list1 > ul > li > a{
+  text-decoration: none;
+  color: #232323;
+}
+
+footer.footer div.footer_block div.search_list2{
+  /* border: 1px solid brown; */
+  display: inline-block;
+  margin-right: 100px;
+}
+
+footer.footer div.footer_block div.search_list2 > ul{
+  list-style: none;
+  padding: 0;
+}
+
+footer.footer div.footer_block div.search_list2 > ul > li > a{
+  text-decoration: none;
+  color: #232323;
+}
+
+footer.footer div.footer_social{
+  /* border: 1px solid blue; */
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer.footer div.footer_social > a > img{
+  /* border: 1px solid red; */
+  margin: 10px 2px 0 20px;
+}
+
+footer.footer div.statement{
+  color: #232323;
+}
+
+footer.footer div.statement > a{
+  text-decoration: none;
+  color: #232323;
+}

@@ -1,0 +1,245 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/banner.css";
+
+header.header nav.nav ul.link_list >li a.-on{
+  color: #E7005C;
+}
+
+
+main.main{
+  /* border: 1px solid black; */
+  background-color: #FFFFDF;
+}
+
+main.main div.title1{
+  /* border: 1px solid purple; */
+}
+
+main.main div.title1 > p{
+  color: #2e9648;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 88px 0;
+  margin-top: 0;
+  text-align: center;
+  position: relative;
+}
+
+main.main div.title1 span.line_1{
+  border-top:2px solid #232323;
+  display: inline-block;
+  width: 350px;
+  position: absolute;
+  top: 520px;
+  left: 150px;
+}
+
+main.main div.title1 span.line_2{
+  border-top:2px solid #232323;
+  display: inline-block;
+  width: 350px;
+  position: absolute;
+  top: 520px;
+  left: 700px;
+}
+
+main.main div.order_block1,
+main.main div.order_block2,
+main.main div.order_block3{
+  display: inline-block;
+  vertical-align: top;
+}
+
+main.main div.order_block1{
+  /* border: 1px solid green; */
+  width: 350px;
+  margin-right: 75px;
+}
+
+main.main div.order_block2{
+  /* border: 1px solid blue; */
+  width: calc(100% - 350px - 75px - 350px - 75px)
+}
+
+main.main div.order_block3{
+  /* border: 1px solid red; */
+  width: 344px;
+  margin-left: 75px;
+}
+
+main.main div.order_block1 div.img1{
+  width: 350px;
+  height: 250px;
+}
+
+main.main div.order_block1 div.img1 > img{
+  width: 100%;
+  height: 100%;
+}
+
+main.main div.order_block2 div.img2{
+  width: 350px;
+  height: 250px;
+  margin-top: 50px;
+}
+
+main.main div.order_block2 div.img2 > img{
+  width: 100%;
+  height: 100%;
+
+}
+
+main.main div.order_block3 div.img3{
+  width: 344px;
+  height: 250px;
+  margin-top: 100px;
+}
+
+main.main div.order_block3 div.img3 > img{
+  width: 100%;
+  height: 100%;
+}
+
+/* 三角形 */
+
+main.main div.triangle_block{
+  /* border: 1px solid black; */
+  position: relative;
+}
+
+main.main div.triangle_block div.tri_img1 > img{
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: -30px;
+  left: 135px;
+}
+
+main.main div.triangle_block div.tri_img2 > img{
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 25px;
+  left: 562px;
+}
+
+main.main div.triangle_block div.tri_img3 > img{
+  /* border: 1px solid blue; */
+  position: absolute;
+  top: 73px;
+  left: 986px;
+}
+
+/* 訂購須知 */
+
+section.order_notice{
+  /* border: 1px solid black; */
+  background-color: #FFFFDF;
+}
+
+section.order_notice div.title1 > p{
+  color: #2e9648;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 68px 0;
+  text-align: center;
+  position: relative;
+  margin-top: 0;
+}
+
+section.order_notice div.title1 span.line_1{
+  border-top:2px solid #232323;
+  display: inline-block;
+  width: 350px;
+  position: absolute;
+  top: 1090px;
+  left: 150px;
+}
+
+section.order_notice div.title1 span.line_2{
+  border-top:2px solid #232323;
+  display: inline-block;
+  width: 350px;
+  position: absolute;
+  top: 1090px;
+  left: 700px;
+}
+
+section.order_notice div.veg_img{
+  width: 450px;
+  htight: 350px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+section.order_notice div.veg_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+section.order_notice div.veg_block{
+  /* border: 1px solid blue; */
+}
+
+section.order_notice div.veg_block div.veg1,
+section.order_notice div.veg_block div.veg2{
+  display: inline-block;
+}
+
+section.order_notice div.veg_block div.veg1{
+  width: 450px;
+  height: 350px;
+  margin: 0 98px;
+}
+
+section.order_notice div.veg_block div.veg1 > img{
+  width: 100%;
+  height: 100%;
+}
+
+section.order_notice div.veg_block div.veg2{
+  width: 450px;
+  height: 350px;
+  /* border: 1px solid green; */
+}
+
+section.order_notice div.veg_block div.veg2 > img{
+  width: 100%;
+  height: 100%;
+}
+
+/* 藍色小貨卡 */
+
+article.car_block{
+  /* border: 1px solid black; */
+  background-color: #FFFFDF;
+  padding: 200px 0 100px 0;
+  position: relative;
+}
+
+article.car_block div.car_img{
+  width:1000px;
+  height: 500px;
+  padding-left: 50px;
+}
+
+article.car_block div.car_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+article.car_block div.word_block{
+  width: 450px;
+  height: 300px;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 150px;
+  left: 600px;
+}
+
+article.car_block div.word_block ol.word{
+  margin: 0;
+  font-size: 20px;
+  color: #232323;
+  line-height: 40px;
+}

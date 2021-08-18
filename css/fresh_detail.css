@@ -1,0 +1,303 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+/*麵包削*/
+
+section.breadcrumb{
+  /* border: 1px solid green; */
+  background-color: #FFFFDF;
+}
+
+section.breadcrumb div.breadcrumb_list{
+  /* border: 1px solid blue; */
+  padding: 5px 10px;
+}
+
+section.breadcrumb div.breadcrumb_list > ol{
+  /* border: 1px solid red; */
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 88px;
+  padding: 0;
+}
+
+section.breadcrumb div.breadcrumb_list > ol > li{
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+section.breadcrumb div.breadcrumb_list > ol > li:nth-child(5){
+  color: #E7005C;
+}
+
+section.breadcrumb div.breadcrumb_list > ol > li > a{
+  text-decoration: none;
+  color: #232323;
+}
+
+section.breadcrumb div.breadcrumb_list > ol > li > a:hover{
+  color: #2e9648;
+}
+
+/*商品列表*/
+
+section.sec1{
+  /* border: 1px solid black; */
+  min-width: 1200px;
+  padding: 40px 0 100px 0;
+  background-color: #FFFFDF;
+}
+
+section.sec1 div.flex_container{
+  /* border: 1px solid blue; */
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+section.sec1 div.flex_container div.items{
+  /* border: 1px solid orange; */
+}
+
+section.sec1 div.flex_container div.items.-left{
+  flex-basis: 400px;
+  flex-shrink: 0;
+  font-size: 0;
+}
+
+section.sec1 div.flex_container div.items.-left div.img_block > img{
+  width: 400px;
+  height: 350px;
+}
+
+section.sec1 div.flex_container div.items.-right{
+  flex-grow: 1;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+section.sec1 div.flex_container div.items.-right h1.title1{
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #232323;
+}
+
+section.sec1 div.flex_container div.items.-right > p{
+  font-size: 18px;
+  margin: 0px;
+  color: #232323;
+}
+
+section.sec1 div.flex_container div.items.-right > p:nth-child(3){
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+section.sec1 div.flex_container div.items.-right ul.desc_list{
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+section.sec1 div.flex_container div.items.-right > p:nth-child(4){
+ margin-bottom: 30px;
+}
+section.sec1 div.flex_container div.items.-right ul.desc_list span.original_price{
+  color: #232323;
+  opacity: 35%;
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+section.sec1 div.flex_container div.items.-right ul.desc_list span.sell_price{
+  color: #E95444;
+  font-size: 24px;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.item_block{
+  /* border: 1px solid blue; */
+  margin-bottom: 30px;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.item_block input.buy_count{
+  vertical-align: middle;
+  width: 50px;
+  height: 20px;
+  transform: translateY(-2px);
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.item_block label.label_item{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block{
+  /* border: 1px solid red; */
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block button.btn1{
+  width:150px;
+  height: 50px;
+  border: 0;
+  margin: 0 40px 0 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #FBE251;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block button.btn1:hover{
+  background-color: #A2D97E;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block button.btn2{
+  width:150px;
+  height: 50px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #FB7813;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block button.btn2:hover{
+  background-color: #A2D97E;
+}
+
+/* 烹飪小教室 */
+
+article.article{
+  background-color: #FFFFDF;
+}
+
+article.article div.cook_title{
+  /* border: 1px solid orange; */
+}
+
+article.article  div.cook_title > h1{
+  /* border: 1px solid blue; */
+  font-size: 28px;
+  color: #2E9648;
+  margin: 0 0 50px 98px;
+  display: inline-block;
+
+}
+
+article.article div.cook_block{
+  /* border: 1px solid green; */
+}
+
+article.article div.cook_block ol.cook_list{
+  margin: 0 0 0px 120px;
+  padding: 0 0 80px 0;
+  font-size: 24px;
+  color: #232323;
+}
+
+/* 相關產品 */
+
+
+
+section.relative{
+  background-color: #FFFFDF;
+}
+
+section.relative div.cook_title > h1{
+  /* border: 1px solid blue; */
+  font-size: 28px;
+  color: #2E9648;
+  margin: 0 0 50px 98px;
+  display: inline-block;
+}
+
+
+section.relative ul.product_list{
+  list-style: none;
+  margin: 0 0 0 100px;
+  padding: 0 0 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ ul.product_list > li{
+  /* border: 1px solid red; */
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 250px;
+  background-color: #ffffff;
+}
+
+section.relative ul.product_list > li > a{
+  /* border: 1px solid blue; */
+  display: block;
+  text-decoration: none;
+  width: 250px;
+  box-shadow: 0 0 5px gray;
+}
+
+section.relative ul.product_list > li > a > h1.product_name{
+  /* border: 1px solid purple; */
+  font-size: 20px;
+  color: #232323;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  padding: 0 7px;
+}
+
+section.relative ul.product_list > li > a div.fresh_img{
+  /* border: 1px solid purple; */
+  font-size: 0;
+}
+
+section.relative ul.product_list > li > a div.fresh_img > img{
+  width: 100%;
+  height: 200px;
+}
+
+section.relative ul.product_list > li > a div.price_block{
+  /* border: 1px solid green; */
+}
+
+section.relative ul.product_list > li > a div.price_block div.price_block1{
+  /* border: 1px solid blue; */
+  font-size: 16px;
+  color: #232323;
+  opacity: 35%;
+  text-decoration: line-through;
+  padding: 0 0 5px 12px;
+}
+
+section.relative ul.product_list > li > a div.price_block div.price_block2{
+  /* border: 1px solid yellow; */
+  font-size: 20px;
+  color: #E95444;
+  padding: 0 0 5px 7px;
+}
+
+section.relative ul.product_list > li > a div.cart_block{
+  /* border: 1px solid black; */
+  position: absolute;
+}
+
+section.relative ul.product_list > li > a div.cart_block button.cart_btn2{
+  /* border: 1px solid blue; */
+  padding: 0;
+  position: relative;
+  top: -52px;
+  right: -200px;
+  border: 0;
+  background-color: #ffffff;
+}
+
+section.relative ul.product_list > li > a div.cart_block button.cart_btn2 > img{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

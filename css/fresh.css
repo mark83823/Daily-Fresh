@@ -1,0 +1,314 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/banner.css";
+
+
+header.header nav.nav ul.link_list > li div.fresh_block a.-on{
+  color: #E7005C;
+}
+
+/*breadcrumb*/
+
+section.breadcrumb{
+  /* border: 1px solid green; */
+  background-color: #FFFFDF;
+}
+
+section.breadcrumb div.breadcrumb_list{
+  /* border: 1px solid blue; */
+  padding: 5px 10px;
+}
+
+section.breadcrumb div.breadcrumb_list > ol{
+  /* border: 1px solid red; */
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 324px;
+  padding: 0;
+}
+
+section.breadcrumb div.breadcrumb_list > ol > li{
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+section.breadcrumb div.breadcrumb_list > ol > li:nth-child(5){
+  color: #E7005C;
+}
+
+section.breadcrumb div.breadcrumb_list > ol > li > a{
+  text-decoration: none;
+  color: #232323;
+}
+
+section.breadcrumb div.breadcrumb_list > ol > li > a:hover{
+  color: #2e9648;
+}
+
+
+/*中間區域*/
+
+div.main_block{
+  /* border: 1px solid red; */
+  height: 1500px;
+  background-color: #FFFFDF;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+div.main_block div.inner_block{
+  /* border: 1px solid green; */
+  width: 1200px;
+  font-size: 0;
+}
+
+div.main_block div.inner_block aside.aside, div.main_block div.inner_block main.main{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+div.main_block div.inner_block aside.aside{
+  /* border: 1px solid purple; */
+  width: 250px;
+  margin-right: 85px;
+}
+
+div.main_block div.inner_block main.main{
+  /* border: 1px solid orange; */
+  width: calc(100% - 250px - 85px)
+}
+
+
+/*側邊攔*/
+
+aside.aside form.search_list{
+  margin: 10px 10px;
+}
+
+aside.aside form.search_list div.search_bar{
+  /* border: 1px solid blue; */
+  margin-left: 20px;
+  position: relative;
+}
+
+aside.aside form.search_list div.search_bar > input{
+  /* border: 1px solid red; */
+  height: 28px;
+}
+
+aside.aside form.search_list div.search_bar button.search_btn1{
+  /* border: 1px solid blue; */
+  background-color: #ffffff;
+  position: absolute;
+  top: 4px;
+  right: 42px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+aside.aside form.search_list div.search_bar button.search_btn1 > img{
+  /* border: 1px solid green; */
+  width: 20px;
+  height: 20px;
+}
+
+aside.aside form.search_list ul.option_list{
+  list-style: none;
+  padding: 0;
+}
+
+aside.aside form.search_list ul.option_list > li > a{
+  text-decoration: none;
+  color: #232323;
+  font-size: 20px;
+  display: block;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+div.veg_block > a{
+  /* border: 1px solid green; */
+  text-decoration: none;
+  color: #232323;
+  font-size: 20px;
+  display: block;
+  margin: 30px 50px 5px 50px;
+}
+
+ul.veg_list{
+  padding: 0;
+  /* border: 1px solid blue; */
+  margin-left: 50px;
+}
+
+ul.veg_list > li{
+  list-style: none;
+}
+
+ul.veg_list > li > a{
+  text-decoration: none;
+  color: #232323;
+}
+
+ul.veg_list > li > a.on{
+  color: #E7005C;
+}
+
+div.meat_block > a{
+  text-decoration: none;
+  color: #232323;
+  font-size: 20px;
+  display: block;
+  margin: 30px 50px 5px 50px;
+
+}
+
+ul.meat_list{
+  padding: 0;
+  margin-left: 50px;
+}
+
+ul.meat_list > li{
+  list-style: none;
+}
+
+ul.meat_list > li > a{
+  text-decoration: none;
+  color: #232323;
+}
+
+/*商品列表*/
+
+main.main ul.product_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.main ul.product_list > li{
+  /* border: 1px solid red; */
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 250px;
+  background-color: #ffffff;
+}
+
+main.main ul.product_list > li > a{
+  /* border: 1px solid blue; */
+  display: block;
+  text-decoration: none;
+  width: 250px;
+  box-shadow: 0 0 5px gray;
+}
+
+main.main ul.product_list > li > a > h1.product_name{
+  /* border: 1px solid purple; */
+  font-size: 20px;
+  color: #232323;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  padding: 0 7px;
+}
+
+main.main ul.product_list > li > a div.fresh_img{
+  /* border: 1px solid purple; */
+  font-size: 0;
+}
+
+main.main ul.product_list > li > a div.fresh_img > img{
+  width: 100%;
+  height: 200px;
+}
+
+main.main ul.product_list > li > a div.price_block{
+  /* border: 1px solid green; */
+}
+
+main.main ul.product_list > li > a div.price_block div.price_block1{
+  /* border: 1px solid blue; */
+  font-size: 16px;
+  color: #232323;
+  opacity: 35%;
+  text-decoration: line-through;
+  padding: 0 0 5px 12px;
+}
+
+main.main ul.product_list > li > a div.price_block div.price_block2{
+  /* border: 1px solid yellow; */
+  font-size: 20px;
+  color: #E95444;
+  padding: 0 0 5px 7px;
+}
+
+main.main ul.product_list > li > a div.cart_block{
+  /* border: 1px solid black; */
+  position: absolute;
+}
+
+main.main ul.product_list > li > a div.cart_block button.cart_btn2{
+  /* border: 1px solid blue; */
+  padding: 0;
+  position: relative;
+  top: -52px;
+  right: -200px;
+  border: 0;
+  background-color: #ffffff;
+}
+
+main.main ul.product_list > li > a div.cart_block button.cart_btn2 > img{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/*分頁*/
+
+main.main div.pagination_block{
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-top: 40px;
+}
+
+main.main div.pagination_block ul.pagination{
+  /* border: 1px solid red; */
+  list-style: none;
+  margin-left: 230px;
+  padding: 0;
+  font-size: 0;
+
+}
+
+main.main div.pagination_block ul.pagination > li{
+  /* border: 1px solid green; */
+  display: inline-block;
+}
+
+main.main div.pagination_block ul.pagination > li > a{
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  /* border: 1px solid orange; */
+  padding: 5px 10px;
+  color: #232323;
+}
+
+main.main div.pagination_block ul.pagination > li > a:hover,
+main.main div.pagination_block ul.pagination > li > a.-on{
+  color: #043CFC;
+}
+
+main.main div.pagination_block ul.pagination > li:first-child > a{
+  transform: translateY(8px);
+}
+
+main.main div.pagination_block ul.pagination > li:last-child > a{
+  transform: translateY(8px);
+}

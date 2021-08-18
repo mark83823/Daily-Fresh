@@ -1,0 +1,454 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+/*banner*/
+section.banner{
+   /* border: 1px solid red; */
+}
+
+section.banner div.banner_bg{
+  position: relative;
+}
+
+section.banner div.banner_bg img{
+  width: 1200px;
+  height: calc( 100vh - 60px);
+  min-height: 518px;
+  vertical-align: bottom;
+}
+
+section.banner div.banner_circle img.circle_img{
+  width: 370px;
+  height: 370px;
+  position: absolute;
+  top: 70px;
+  left: 415px;
+}
+
+section.banner div.banner_word{
+  /* border: 1px solid orange; */
+  display: inline-block;
+  text-align: center;
+  width: 270px;
+  height: 300px;
+  position: absolute;
+  top: 110px;
+  left: 480px;
+}
+
+section.banner div.banner_word p.line1{
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  color: #2e9648;
+  transform: translateX(-13px);
+}
+
+section.banner div.banner_word p.line2{
+  font-size: 28px;
+  color: #232323;
+  transform: translateX(-13px);
+}
+
+section.banner div.banner_word p.line3{
+  font-size: 18px;
+  color: #232323;
+  transform: translateX(-13px);
+}
+section.banner div.banner_word p.line4{
+  font-size: 18px;
+  color: #232323;
+  transform: translateX(-13px);
+}
+
+section.banner div.banner_word p.line5{
+  font-size: 18px;
+  color: #232323;
+  transform: translateX(-13px);
+}
+
+section.banner div.active_img img.redpepper{
+  width: 211px;
+  height: 343px;
+  position: absolute;
+  top: 186px;
+  left: -18px;
+}
+
+section.banner div.active_img img.edamame{
+  width: 327px;
+  height: 212px;
+  position: absolute;
+  top: 367px;
+  left: 50px;
+}
+
+section.banner div.active_img img.tomato{
+  width: 272px;
+  height: 183px;
+  position: absolute;
+  top: 413px;
+  left: 450px;
+}
+
+section.banner div.active_img img.edamame1{
+  width: 319px;
+  height: 190px;
+  position: absolute;
+  top: 407px;
+  left: 720px;
+}
+
+section.banner div.active_img img.orange{
+  width: 124px;
+  height: 203px;
+  position: absolute;
+  top: 395px;
+  left: 1094px;
+}
+
+section.banner div.active_img img.yellowpepper{
+  width: 287px;
+  height: 306px;
+  position: absolute;
+  top: 80px;
+  left: 934px;
+}
+
+/*熱門產品*/
+
+main.main{
+  background-color: #FFFFDF;
+  /* border: 1px solid blue; */
+  padding-bottom: 150px;
+}
+
+main.main > h1{
+  /* border: 1px solid green; */
+  color: #2e9648;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main.main ul.product_list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.main ul.product_list > li{
+  /* border: 1px solid black; */
+  margin: 20px auto;
+}
+
+main.main ul.product_list > li > a{
+  text-decoration: none;
+  color: #232323;
+}
+
+main.main ul.product_list div.next_left{
+  /* border: 1px solid orange; */
+}
+
+main.main ul.product_list div.next_left > button{
+  border: 1px solid blue;
+  transform: translateY(100px);
+  background-color: #FFFFDF;
+  border: none;
+  cursor: pointer;
+
+}
+
+main.main ul.product_list div.next_right > button{
+  border: 1px solid blue;
+  transform: translateY(100px);
+  background-color: #FFFFDF;
+  border: none;
+  cursor: pointer;
+
+}
+
+main.main div.product_block > img{
+  /* border: 1px solid blue; */
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+main.main ul.product_list h1.title1{
+  text-align: center;
+}
+
+main.main ul.product_list > li > a div.price_block{
+  /* border: 1px solid purple; */
+
+}
+
+main.main ul.product_list > li > a div.price_block div.original_block{
+  /* border: 1px solid blue; */
+  text-decoration: line-through;
+  color: #232323;
+  opacity: 35%;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+main.main ul.product_list > li > a div.price_block div.sell_block{
+  /* border: 1px solid green; */
+  font-size: 18px;
+  text-align: center;
+  color: #E95444;
+}
+
+main.main ul.product_list > li div.cart_block{
+  position: relative;
+}
+
+ main.main ul.product_list > li div.cart_block button.cart{
+   /* border: 1px solid blue; */
+   background-color: #FFFFDF;
+   position: absolute;
+   top: -27px;
+   right: 0;
+   border: 0;
+ }
+
+main.main ul.product_list > li div.cart_block button.cart:hover{
+  cursor: pointer;
+}
+
+main.main ul.product_list > li div.cart_block button.cart > img{
+  width: 20px;
+  height: 20px;
+}
+
+main.main ul.product_list > li div.detail_box{
+  width: 800px;
+  height: 130px;
+  /* border: 1px solid red; */
+  background-color: #2e9648;
+  border-radius: 20px;
+  position: relative;
+}
+
+main.main ul.product_list > li div.detail_box > h1{
+  margin: 0;
+  padding: 0;
+  color: #FBE251;
+  position: absolute;
+  top: 50px;
+  right: 61px;
+}
+
+main.main ul.product_list > li div.detail_box > p{
+  color:#Ffffff;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+main.main ul.product_list > li div.detail_box > img{
+  position: absolute;
+  top: 20pxs;
+  right: 20px;
+}
+
+/*區域一*/
+
+article.article{
+  background-color: #FFFFDF;
+  /* border: 1px solid orange; */
+  padding-bottom: 150px;
+}
+
+article.article a.slogan1{
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 1073px;
+  height: 434px;
+  background-color: #FFFFB9;
+  text-decoration: none;
+
+}
+
+article.article a.slogan1 div.slogan_block1{
+  /* border: 1px solid green; */
+  width:350px;
+  top: 100px;
+  left: 50px;
+  color: #232323;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 0;
+}
+
+article.article a.slogan1 div.slogan_block1 > h1{
+  font-size: 28px;
+  display: inline;
+  /* border: 1px solid purple; */
+  margin-left: 45px;
+  color: #2E9648;
+  text-decoration: underline;
+}
+
+article.article a.slogan1 div.slogan_block1 > p{
+  font-size: 20px;
+}
+
+article.article a.slogan1 div.slogan_block1 p.p1{
+  margin-left: 13px;
+  margin-top: 40px;
+}
+
+article.article a.slogan1 div.slogan_block1 p.p3{
+  margin-left: 38px;
+}
+
+article.article a.slogan1 div.slogan_block1 p.p4{
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 16px
+}
+
+article.article a.slogan2{
+  /* border: 1px solid blue; */
+  display: inline-block;
+}
+
+article.article a.slogan2 div.slogan_img{
+  /* border: 1px solid orange; */
+   position: relative;
+}
+
+article.article a.slogan2 div.slogan_img > img{
+  width: 784px;
+  height: 356px;
+  vertical-align: bottom;
+  position: absolute;
+  top: -322px;
+  right: -121px;
+}
+
+/*區域二*/
+
+article.article1{
+  background-color: #FFFFDF;
+  padding-bottom: 150px;
+}
+
+article.article1 a.slogan3{
+  /* border: 1px solid black; */
+  display: inline-block;
+  font-size: 0;
+}
+
+article.article1 a.slogan3 div.cabbage_img{
+  /* border: 1px solid red; */
+}
+
+article.article1 a.slogan3 div.cabbage_img > img{
+  width: 600px;
+  height: 400px;
+}
+
+article.article1 a.slogan4{
+  /* border: 1px solid blue; */
+  display: inline-block;
+  text-decoration: none;
+  background-color: #FDDFDF;
+  width: 600px;
+  height: 320px;
+  position: relative;
+}
+
+article.article1 a.slogan4 div.slogan_block2{
+  /* border: 1px solid green; */
+  color: #232323;
+  position: absolute;
+  top: 0;
+  right: 180px;
+}
+
+article.article1 a.slogan4 div.slogan_block2 > h1{
+  font-size: 28px;
+  text-decoration: underline;
+  color: #2E9648;
+}
+
+article.article1 a.slogan4 div.slogan_block2 p.p5{
+  font-size: 20px;
+  margin-left: 58px;
+}
+
+article.article1 a.slogan4 div.slogan_block2 p.p6{
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+article.article1 a.slogan4 div.slogan_block2 p.p7{
+  font-size: 20px;
+  margin-left: 90px;
+}
+
+article.article1 a.slogan4 div.slogan_block2 p.p8{
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+article.article1 a.slogan4 div.slogan_block2 p.p9{
+  font-size: 16px;
+  position: relative;
+  bottom: -20px;
+  right: -410px;
+}
+article.article1{
+  font-size: 0;
+}
+
+article.article2{
+  background-color: #FFFFDF;
+}
+
+article.article2 > h1{
+  font-size: 36px;
+  color: #2e9648;
+  font-weight: bold;
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: 0 auto 120px;
+
+}
+
+article.article2 div.instgram_block{
+  padding-bottom: 110px;
+  /* border: 1px solid green; */
+
+}
+
+article.article2 div.instgram_block > a{
+  /* border: 1px solid black; */
+}
+
+article.article2 div.instgram_block > a div.instgram_img{
+  /* border: 1px solid blue; */
+  display: inline-block;
+}
+
+article.article2 div.instgram_block > a div.instgram_img > img{
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid red; */
+  margin-left: 70px;
+}
+
+article.article2{
+  font-size: 0;
+}

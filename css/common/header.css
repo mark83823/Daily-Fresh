@@ -1,0 +1,218 @@
+header.header{
+  /* border: 1px solid blue; */
+  font-size: 16px;
+  /* width: 100%; */
+  width: 1200px;
+  background: #E2FABF;
+}
+
+header.header a.logo_img{
+  /* border: 1px solid purple; */
+}
+
+header.header nav.nav{
+  /* border: 1px solid red; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header.header nav.nav > a.logo_img{
+  /* border: 1px solid gray; */
+  display: inline-block;
+  font-size: 0px;
+  vertical-align: top;
+  margin-right: 50px;
+}
+
+header.header nav.nav a.logo_img img{
+  height: 60px;
+}
+
+header.header nav.nav ul.link_list{
+  list-style: none;
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  margin-right: 500px;
+}
+
+header.header nav.nav ul.link_list > li{
+  /* border: 1px solid blue; */
+  display:inline-block;
+  vertical-align: top;
+}
+
+header.header nav.nav ul.link_list > li > a{
+  text-decoration: none;
+  /* border: 1px solid red; */
+  display: inline-block;
+  padding:  35px 10px 0 10px;
+  color: #232323;
+}
+
+header.header nav.nav ul.link_list > li > a:hover{
+  color:#E7005C;
+}
+
+nav.nav ul.link_list > li div.fresh_block{
+  /* border: 1px solid green; */
+  padding: 35px 10px 0 10px;
+  position: relative;
+}
+
+nav.nav ul.link_list > li div.fresh_block:hover a{
+  color:#E7005C;
+}
+
+nav.nav ul.link_list > li div.fresh_block > a{
+  text-decoration: none;
+  color: #232323;
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+nav.nav ul.link_list > li div.fresh_block:hover ul.fresh_list{
+  display: block;
+  z-index: 2;
+}
+
+nav.nav ul.link_list > li div.fresh_block ul.fresh_list{
+  padding: 0px;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 56px;
+  right: 0px;
+  width: 100%;
+  display: none;
+}
+nav.nav ul.link_list > li div.fresh_block ul.fresh_list > li{
+  list-style: none;
+  /* border: 1px solid orange; */
+}
+
+nav.nav ul.link_list > li div.fresh_block ul.fresh_list > li > a{
+  text-decoration: none;
+  /* border: 1px solid green; */
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color:#232323;
+  background-color: #E2FABF;
+}
+
+nav.nav ul.link_list > li div.fresh_block ul.fresh_list > li > a:hover{
+  color:#E7005C;
+}
+
+nav.nav ul.link_list > li div.recipes_block{
+  /* border: 1px solid red; */
+  padding: 35px 10px 0 10px;
+  position: relative;
+}
+
+nav.nav ul.link_list > li div.recipes_block:hover a{
+  color:#E7005C;
+}
+
+nav.nav ul.link_list > li div.recipes_block > a{
+  text-decoration: none;
+  color:#232323;
+}
+
+nav.nav ul.link_list > li div.recipes_block > a:hover{
+  color:#E7005C;
+}
+
+nav.nav ul.link_list > li div.recipes_block:hover ul.recipes_list{
+  display: block;
+  z-index: 2;
+}
+
+nav.nav ul.link_list > li div.recipes_block ul.recipes_list{
+  padding: 0px;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 56px;
+  right: 0;
+  display: none;
+}
+nav.nav ul.link_list > li div.recipes_block ul.recipes_list > li{
+  list-style: none;
+  /* border: 1px solid orange; */
+}
+
+nav.nav ul.link_list > li div.recipes_block ul.recipes_list > li > a{
+  text-decoration: none;
+  /* border: 1px solid green; */
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  color:#232323;
+  background-color: #E2FABF;
+}
+
+
+nav.nav ul.link_list > li div.recipes_block ul.recipes_list > li > a:hover{
+  color:#E7005C;
+}
+
+nav.nav {
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+nav.nav div.main_btn{
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+nav.nav div.main_btn div.search_btn{
+  /* border: 1px solid red; */
+  margin-right: 10px;
+}
+
+nav.nav div.main_btn div.search_btn img{
+  width: 25px;
+  height: 25px;
+}
+
+nav.nav div.main_btn div.search_btn img:hover{
+  width: 30px;
+  height: 30px;
+}
+
+nav.nav div.main_btn div.cart_btn{
+  /* border: 1px solid red; */
+  margin-right: 10px;
+}
+
+nav.nav div.main_btn div.cart_btn img{
+  width: 25px;
+  height: 25px;
+}
+
+nav.nav div.main_btn div.cart_btn img:hover{
+  width: 30px;
+  height: 30px;
+}
+
+nav.nav div.main_btn div.login_btn{
+  /* border: 1px solid red; */
+}
+
+nav.nav div.main_btn div.login_btn img{
+  width: 25px;
+  height: 25px;
+}
+
+nav.nav div.main_btn div.login_btn img:hover{
+  width: 30px;
+  height: 30px;
+}

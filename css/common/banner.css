@@ -1,0 +1,9 @@
+section.banner_bg{
+  border: 1px solid black;
+  font-size: 0;
+}
+
+section.banner_bg > img{
+  width: 1200px;
+  height: 350px;
+}

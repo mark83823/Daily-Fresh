@@ -1,0 +1,413 @@
+@import "./common/all.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+header.header nav.nav ul.link_list > li div.recipes_block a.-on{
+  color: #E7005C;
+}
+
+
+
+section.sec1{
+  /* border: 1px solid black; */
+  min-width: 1200px;
+  padding: 40px 0 40px 0;
+  background-color: #FFFFDF;
+}
+
+section.sec1 div.flex_container{
+  /* border: 1px solid blue; */
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+section.sec1 div.flex_container div.items{
+  /* border: 1px solid orange; */
+}
+
+section.sec1 div.flex_container div.items.-left{
+  flex-basis: 400px;
+  flex-shrink: 0;
+  font-size: 0;
+}
+
+section.sec1 div.flex_container div.items.-left div.img_block > img{
+  width: 400px;
+  height: 350px;
+}
+
+section.sec1 div.flex_container div.items.-right{
+  flex-grow: 1;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+section.sec1 div.flex_container div.items.-right h1.title1{
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  color: #232323;
+}
+
+section.sec1 div.flex_container div.items.-right > p{
+  font-size: 18px;
+  margin: 0px;
+  color: #232323;
+}
+
+section.sec1 div.flex_container div.items.-right > p:nth-child(3){
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+section.sec1 div.flex_container div.items.-right ul.desc_list{
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+section.sec1 div.flex_container div.items.-right > p:nth-child(4){
+ margin-bottom: 30px;
+}
+section.sec1 div.flex_container div.items.-right ul.desc_list span.original_price{
+  color: #232323;
+  opacity: 35%;
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+section.sec1 div.flex_container div.items.-right ul.desc_list span.sell_price{
+  color: #E95444;
+  font-size: 24px;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.item_block{
+  /* border: 1px solid blue; */
+  margin-bottom: 30px;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.item_block input.buy_count{
+  vertical-align: middle;
+  width: 50px;
+  height: 20px;
+  transform: translateY(-2px);
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.item_block label.label_item{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block{
+  /* border: 1px solid red; */
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block button.btn1{
+  width:150px;
+  height: 50px;
+  border: 0;
+  margin: 0 40px 0 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #FBE251;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block button.btn1:hover{
+  background-color: #A2D97E;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block button.btn2{
+  width:150px;
+  height: 50px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #FB7813;
+}
+
+section.sec1 div.flex_container div.items.-right form.buy_form div.btn_block button.btn2:hover{
+  background-color: #A2D97E;
+}
+
+
+/* 下方照片 */
+
+section.sec2{
+  /* border: 1px solid black; */
+  font-size: 0;
+  background-color: #FFFFDF;
+  padding-bottom: 100px;
+}
+
+section.sec2 div.recipes_img1,
+section.sec2 div.recipes_img2{
+  display: inline-block;
+}
+
+section.sec2 div.recipes_img1{
+  width:185px;
+  height: 185px;
+  margin-left: 100px;
+  margin-right: 30px;
+}
+
+section.sec2 div.recipes_img1 > img{
+  width: 100%;
+  height: 100%;
+}
+
+section.sec2 div.recipes_img2{
+  width:185px;
+  height: 185px;
+  margin-right: 100px;
+}
+
+section.sec2 div.recipes_img2 > img{
+  width: 100%;
+  height: 100%;
+}
+
+section.sec2 div.recipes_img1,
+section.sec2 div.recipes_img2,
+section.sec2 div.table_block{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* 內容物 */
+
+div.table_block{
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 300px;
+}
+
+div.table_block > table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 24px;
+}
+
+div.table_block > table th,
+div.table_block > table td{
+  /* border: 1px solid blue; */
+  font-size: 20px;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+}
+
+div.table_block > table th{
+  text-align: center;
+  border: 1px solid black;
+}
+
+div.table_block > table td:nth-child(2n){
+  border-right: 1px solid black;
+}
+
+
+/*影片*/
+
+section.video_block{
+  /* border: 1px solid blue; */
+  background-color: #FFFFDF;
+}
+
+section.video_block div.video{
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+/* 一起跟著做 */
+
+section.follow{
+  /* border: 1px solid black; */
+  background-color: #FFFFDF;
+}
+
+section.follow div.title1{
+  /* border: 1px solid orange; */
+}
+
+section.follow div.title1 > p{
+  /* border: 1px solid green; */
+  color: #2e9648;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0px 0 50px 0;
+  text-align: center;
+  padding-top: 100px;
+}
+
+section.follow div.follow_block1,
+section.follow div.follow_block2,
+section.follow div.follow_block3{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*上面三個*/
+
+section.follow div.top3{
+  /* border: 1px solid orange; */
+  margin-bottom:  100px;
+}
+
+
+
+section.follow div.follow_block1{
+  /* border: 1px solid black; */
+  margin-left: 100px;
+
+}
+
+section.follow div.follow_block1 div.describe{
+  /* border: 1px solid green; */
+  font-size: 18px;
+  text-align: center;
+
+}
+
+section.follow div.follow_block1 div.describe > p{
+  margin: 0;
+  padding: 10px;
+  line-height: 30px;
+  color: #232323;
+
+}
+
+section.follow div.follow_block2{
+  /* border: 1px solid black; */
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 18px;
+  text-align: center;
+}
+
+section.follow div.follow_block2 div.describe > p{
+  margin: 0;
+  padding: 10px;
+  line-height: 30px;
+  color: #232323;
+}
+
+
+section.follow div.follow_block3{
+  /* border: 1px solid black; */
+  font-size: 18px;
+  text-align: center;
+}
+
+section.follow div.follow_block3 div.describe > p{
+  margin: 0;
+  padding: 10px;
+  line-height: 30px;
+  color: #232323;
+
+}
+
+
+/*下面兩個*/
+section.follow div.top2{
+  font-size: 0;
+  /* border: 1px solid purple; */
+  margin-bottom: 100px;
+}
+
+
+section.follow div.top2 div.follow_block4,
+section.follow div.top2 div.follow_block5{
+  display: inline-block;
+  vertical-align: top;
+}
+
+section.follow div.top2 div.follow_block4{
+  /* border: 1px solid black; */
+  font-size: 18px;
+  text-align: center;
+  margin-left: 270px;
+}
+
+section.follow div.follow_block4 div.describe > p{
+  margin: 0;
+  padding: 10px;
+  line-height: 30px;
+  color: #232323;
+}
+
+
+section.follow div.top2 div.follow_block5{
+  /* border: 1px solid black; */
+  font-size: 18px;
+  text-align: center;
+  margin-left: 100px;
+
+}
+
+section.follow div.follow_block5 div.describe > p{
+  margin: 0;
+  padding: 10px;
+  line-height: 30px;
+  color: #232323;
+
+}
+
+
+
+
+/*1-5的圖片大小設定*/
+section.follow div.follow_block1 div.follow_img{
+  width: 280px;
+  height: 200px;
+}
+
+section.follow div.follow_block1 div.follow_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+section.follow div.follow_block2 div.follow_img{
+  width: 280px;
+  height: 200px;
+}
+
+section.follow div.follow_block2 div.follow_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+section.follow div.follow_block3 div.follow_img{
+  width: 280px;
+  height: 200px;
+}
+
+section.follow div.follow_block3 div.follow_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+section.follow div.follow_block4 div.follow_img{
+  width: 280px;
+  height: 200px;
+}
+
+section.follow div.follow_block4 div.follow_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+section.follow div.follow_block5 div.follow_img{
+  width: 280px;
+  height: 200px;
+}
+
+section.follow div.follow_block5 div.follow_img > img{
+  width: 100%;
+  height: 100%;
+}
