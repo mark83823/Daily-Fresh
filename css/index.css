@@ -73,7 +73,7 @@ section.banner div.active_img img.redpepper{
   height: 343px;
   position: absolute;
   top: 186px;
-  left: -18px;
+  left: 15px;
 }
 
 section.banner div.active_img img.edamame{
@@ -81,7 +81,7 @@ section.banner div.active_img img.edamame{
   height: 212px;
   position: absolute;
   top: 367px;
-  left: 50px;
+  left: 83px;
 }
 
 section.banner div.active_img img.tomato{
@@ -89,7 +89,7 @@ section.banner div.active_img img.tomato{
   height: 183px;
   position: absolute;
   top: 413px;
-  left: 450px;
+  left: 483px;
 }
 
 section.banner div.active_img img.edamame1{
@@ -97,7 +97,7 @@ section.banner div.active_img img.edamame1{
   height: 190px;
   position: absolute;
   top: 407px;
-  left: 720px;
+  left: 753px;
 }
 
 section.banner div.active_img img.orange{
@@ -105,7 +105,7 @@ section.banner div.active_img img.orange{
   height: 203px;
   position: absolute;
   top: 395px;
-  left: 1094px;
+  left: 1127px;
 }
 
 section.banner div.active_img img.yellowpepper{
@@ -113,7 +113,7 @@ section.banner div.active_img img.yellowpepper{
   height: 306px;
   position: absolute;
   top: 80px;
-  left: 934px;
+  left: 966px;
 }
 
 /*熱門產品*/
@@ -405,8 +405,9 @@ article.article1 a.slogan4 div.slogan_block2 p.p8{
 
 article.article1 a.slogan4 div.slogan_block2 p.p9{
   font-size: 16px;
-  position: relative;  
+  position: relative;
   right: -410px;
+  width: 30px;
 }
 article.article1{
   font-size: 0;

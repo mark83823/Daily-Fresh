@@ -8,6 +8,10 @@ header.header nav.nav ul.link_list >li a.-on{
 }
 
 
+section.banner_bg{
+  font-size: 0;
+}
+
 main.main{
   /* border: 1px solid black; */
   background-color: #FFFFDF;

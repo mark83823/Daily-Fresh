@@ -1,4 +1,4 @@
-@import "./common/all.css";
+  @import "./common/all.css";
 @import "./common/header.css";
 @import "./common/footer.css";
 @import "./common/banner.css";
@@ -272,6 +272,7 @@ section.featured div.flex_container1 div.fe.-right1 > h2{
 section.featured div.flex_container1 div.fe.-right1 > p{
   font-size: 18px;
   color: #232323;
+  opacity: 60%;
 }
 
 

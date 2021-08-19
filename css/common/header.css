@@ -173,6 +173,7 @@ nav.nav div.main_btn{
   align-items: flex-end;
 }
 
+
 nav.nav div.main_btn div.search_btn{
   /* border: 1px solid red; */
   margin-right: 10px;
@@ -206,7 +207,6 @@ nav.nav div.main_btn div.cart_btn img:hover{
 nav.nav div.main_btn div.login_btn{
   /* border: 1px solid red; */
 }
-
 nav.nav div.main_btn div.login_btn img{
   width: 25px;
   height: 25px;
