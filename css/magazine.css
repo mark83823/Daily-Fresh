@@ -717,13 +717,13 @@ section.featured div.flex_container1 div.fe.-left1 > img{
 
 section.featured div.flex_container1 div.fe.-right1{
   flex-grow: 1;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
 }
 
 
 
 section.featured div.flex_container1 div.fe.-right1 > h2{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   font-size: 24px;
   color: #232323;
   margin-bottom: 35px;
@@ -733,7 +733,7 @@ section.featured div.flex_container1 div.fe.-right1 > p{
   font-size: 18px;
   color: #232323;
   opacity: 60%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
