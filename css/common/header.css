@@ -1,8 +1,8 @@
 header.header{
   /* border: 1px solid blue; */
   font-size: 16px;
-  /* width: 100%; */
-  width: 1200px;
+  width: 100%;
+  /* width: 1200px; */
   background: #E2FABF;
 }
 
@@ -12,7 +12,7 @@ header.header a.logo_img{
 
 header.header nav.nav{
   /* border: 1px solid red; */
-  width: 1200px;
+  /* width: 100%; */
   margin: 0 auto;
 }
 
@@ -35,8 +35,15 @@ header.header nav.nav ul.link_list{
   margin: 0px;
   padding: 0px;
   vertical-align: top;
-  margin-right: 500px;
+  /* margin-right: 40%; */
 }
+
+@media (max-width: 767px){
+  header.header nav.nav ul.link_list{
+    display: none;
+  }
+}
+
 
 header.header nav.nav ul.link_list > li{
   /* border: 1px solid blue; */
@@ -166,11 +173,13 @@ nav.nav ul.link_list > li div.recipes_block ul.recipes_list > li > a:hover{
 nav.nav {
   /* border: 1px solid black; */
   display: flex;
+  justify-content: space-between;
 }
 
 nav.nav div.main_btn{
   display: inline-flex;
   align-items: flex-end;
+  /* border: 1px solid red; */
 }
 
 
@@ -215,4 +224,53 @@ nav.nav div.main_btn div.login_btn img{
 nav.nav div.main_btn div.login_btn img:hover{
   width: 30px;
   height: 30px;
+}
+
+button.hamburger{
+  /* border: 1px solid black; */
+  display: none;
+  width: 45px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+@media (max-width: 767px){
+  button.hamburger{
+  display: inline-block;
+  }
+}
+nav.main_nav{
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+nav.main_nav ul.nav_list{
+  /* border: 1px solid green; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.main_nav ul.nav_list > li{
+  /* border: 1px solid orange; */
+  text-align: center;
+}
+
+nav.main_nav ul.nav_list > li:hover{
+  background-color:#fff;
+}
+
+nav.main_nav ul.nav_list > li > a{
+  text-decoration: none;
+  color: #232323;
+  display: block;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+
+nav.main_nav ul.nav_list > li > a:hover{
+  color: #E7005C;
 }

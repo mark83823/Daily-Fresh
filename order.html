@@ -2,8 +2,11 @@
 <html lang="zh-Hant" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>訂購流程-Daily Fresh</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/order.css">
+    <link href="./vendors/hamburgers.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -44,13 +47,35 @@
           <div class="login_btn">
             <img src="./images/login.png" alt="登入按鈕">
           </div>
+
+          <!-- 漢堡按鈕 -->
+
+          <button class="hamburger hamburger--squeeze" type="button">
+           <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+           </span>
+         </button>
+
+
+
         </div>
       </nav>
     </header>
 
+      <nav class="main_nav">
+        <ul class="nav_list">
+          <li><a href="./fresh.html">生鮮</a></li>
+          <li><a href="./recipes.html">做飯靈感</a></li>
+          <li><a href="./magazine.html">健康新知</a></li>
+          <li><a href="./order.html">訂購流程</a></li>
+          <li><a href="./about.html">關於我們</a></li>
+        </ul>
+      </nav>
+
     <section class="banner_bg">
       <img src="./images/order/order_banner.jpg" alt="banner">
     </section>
+
 
     <main class="main">
       <div class="title1">
@@ -59,8 +84,8 @@
         <span class="line_2"></span>
       </div>
 
-      <div class="triangle_block">
-        <div class="tri_img1">
+      <div class="triangle_block" >
+        <div class="tri_img1" >
           <img src="./images/order/triangle1.png">
         </div>
 
@@ -75,21 +100,40 @@
       </div>
 
 
-      <div class="order_block1">
-        <div class="img1">
-          <img src="./images/order/order1.jpg">
+      <div class="order_process">
+        <div class="order_block1" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+          <div class="img1">
+            <img src="./images/order/order1.jpg">
+          </div>
+          <div class="word">
+            <h2>訂購</h2>
+            <p>雙北限定，當日任選三時段<br>
+                1000收單，1400前可到<br>
+                1400收單，1730前可到<br>
+                1600收單，1930前可到</p>
+          </div>
         </div>
-      </div>
 
-      <div class="order_block2">
-        <div class="img2">
-          <img src="./images/order/order2.jpg">
+        <div class="order_block2" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="800">
+          <div class="img2">
+            <img src="./images/order/order2.jpg">
+          </div>
+          <div class="word">
+            <h2>出貨</h2>
+            <p>收到訂單後，立即準備出貨<br>
+              當天產地直送，天天配送</p>
+          </div>
         </div>
-      </div>
 
-      <div class="order_block3">
-        <div class="img3">
-          <img src="./images/order/order3.jpg">
+        <div class="order_block3" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1600">
+          <div class="img3">
+            <img src="./images/order/order3.jpg">
+          </div>
+          <div class="word">
+            <h2>取貨</h2>
+            <p>抵達前司機以電話聯繫，每一步都謹慎用心
+              將最好的食材送到您的手中</p>
+          </div>
         </div>
       </div>
     </main>
@@ -178,11 +222,45 @@
           <a href="#"><img src="./images/fb.png" alt=""></a>
           <a href="#"><img src="./images/line.png" alt=""></a>
         </div>
-        <div class="statement">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:
+        <div class="statement">本網站為緯育TibaMe前端設計工程師班第70期學員專題作品，本平台僅供學習、展示之用。參考資源:
           <a href="https://www.xintian0423.com/">心田蔬果坊</a>、<a href="https://www.yfcfood.com/">鮮準珼</a>
           。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>
           ，後續會由專人協助處理。
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <!-- 漢堡 -->
+
+    <script>
+      $(function(){
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function(){
+          $(this).toggleClass("is-active");
+        });
+
+      });
+    </script>
+
+    <!-- 漢堡縮放 -->
+
+    <script type="text/javascript">
+      $(function(){
+
+        $("button.hamburger").on("click", function(){
+          $("nav.main_nav").slideToggle();
+        });
+
+      });
+    </script>
+
+
+
   </body>
 </html>

@@ -2,8 +2,13 @@
 <html lang="zh-Hant" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Daily Fresh每日新鮮生鮮直送</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="./vendors/hamburgers.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -45,10 +50,33 @@
           <div class="login_btn">
             <a href="#"><img src="./images/login.png" alt="登入按鈕"></a>
           </div>
+
+
+          <!-- 漢堡按鈕 -->
+
+          <button class="hamburger hamburger--squeeze" type="button">
+           <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+           </span>
+         </button>
+
+
+
         </div>
       </nav>
 
     </header>
+
+    <nav class="main_nav">
+      <ul class="nav_list">
+        <li><a href="./fresh.html">生鮮</a></li>
+        <li><a href="./recipes.html">做飯靈感</a></li>
+        <li><a href="./magazine.html">健康新知</a></li>
+        <li><a href="./order.html">訂購流程</a></li>
+        <li><a href="./about.html">關於我們</a></li>
+      </ul>
+    </nav>
+
 
     <section class="banner">
       <div class="banner_block">
@@ -69,102 +97,182 @@
           </div>
 
           <div class="active_img">
-            <img class="redpepper" src="./images/home/bg/banner1.png" alt="紅椒">
-            <img class="edamame" src="./images/home/bg/banner2.png" alt="毛豆">
-            <img class="tomato" src="./images/home/bg/banner3.png" alt="番茄">
-            <img class="edamame1" src="./images/home/bg/banner4.png" alt="毛豆">
-            <img class="orange" src="./images/home/bg/banner5.png" alt="橘子">
-            <img class="yellowpepper" src="./images/home/bg/banner6.png" alt="黃椒">
+            <img class="-loading1" src="./images/home/bg/banner1.png" alt="紅椒">
+            <img class="-loading2" src="./images/home/bg/banner2.png" alt="毛豆">
+            <img class="-loading3" src="./images/home/bg/banner3.png" alt="番茄">
+            <img class="-loading4" src="./images/home/bg/banner4.png" alt="毛豆">
+            <img class="-loading5" src="./images/home/bg/banner5.png" alt="橘子">
+            <img class="-loading6" src="./images/home/bg/banner6.png" alt="黃椒">
           </div>
       </div>
     </section>
+
 
 
     <!-- 熱銷產品 -->
 
     <main class="main">
       <h1>熱銷產品</h1>
-      <ul class="product_list">
 
-        <li>
+      <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-          <a href="#">
-            <div class="product_block">
+          <div class="swiper-slide">
+            <div class="img_block">
               <img src="./images/home/carousel/carousel1.png" alt="">
             </div>
-            <h1 class="title1">小家庭蔬菜箱</h1>
-            <div class="price_block">
-              <div class="original_block">$699</div>
-              <div class="sell_block">$599</div>
+            <div class="word_block">
+              <p>小家庭蔬菜箱</p>
             </div>
-          </a>
-
-          <div class="cart_block">
-            <button class="cart" type="button" name="button"><img src="./images/cart.png"</button>
+            <div class="original_block">$699</div>
+            <div class="sell_block">$599</div>
+            <div class="cart_block">
+              <button class="cart" type="button" name="button"><img src="./images/cart.png"</button>
+            </div>
           </div>
-        </li>
 
-        <div class="next_left">
-          <button class="next_left_btn" type="button"><img src="./images/arrow_left.png"</button>
-        </div>
 
-        <li>
-
-          <a href="./recipes_detail.html">
-            <div class="product_block">
+          <div class="swiper-slide">
+            <div class="img_block">
               <img src="./images/home/carousel/carousel2.png" alt="">
             </div>
-            <h1 class="title1">熱炒三杯雞料理包</h1>
-            <div class="price_block">
-              <div class="original_block"><span class="original_price">$219</span></div>
-              <div class="sell_block"><span class="sell_price">$189</span></div>
+            <div class="word_block">
+              <p>熱炒三杯雞料理包</p>
             </div>
-          </a>
-
-          <div class="cart_block">
-            <button class="cart" type="button" name="button"><img src="./images/cart.png"</button>
+            <div class="original_block">$219</div>
+            <div class="sell_block">$189</div>
+            <div class="cart_block">
+              <button class="cart" type="button" name="button"><img src="./images/cart.png"</button>
+            </div>
           </div>
 
-        </li>
 
-        <div class="next_right">
-          <button class="next_right_btn" type="button"><img src="./images/arrow_right.png"</button>
-        </div>
-
-        <li>
-
-          <a href="#">
-            <div class="product_block">
+          <div class="swiper-slide">
+            <div class="img_block">
               <img src="./images/home/carousel/carousel3.jpg" alt="">
             </div>
-            <h1 class="title1">安格斯牛小排(21oz)</h1>
-            <div class="price_block">
-              <div class="original_block"><span class="original_price">$1199</span></div>
-              <div class="sell_block"><span class="sell_price">$999</span></div>
+            <div class="word_block">
+              <p>安格斯牛小排(21oz)</p>
             </div>
-          </a>
-
-          <div class="cart_block">
-            <button class="cart" type="button" name="button"><img src="./images/cart.png"</button>
+            <div class="original_block">$1199</div>
+            <div class="sell_block">$999</div>
+            <div class="cart_block">
+              <button class="cart" type="button" name="button"><img src="./images/cart.png"</button>
+            </div>
           </div>
 
-        </li>
 
-
-        <li>
-          <div class="detail_box">
-            <h1>前往選購</h1>
-            <p>濃稠的醬汁+鮮嫩的雞肉=白飯殺手！ 別忘了事先多煮些白飯哦！<br>不用辛苦量醬料，在家也可以輕鬆完成。</p>
-            <img src="./images/arrow_go.png" alt="箭頭">
+          <div class="swiper-slide">
+            <div class="img_block">
+              <img src="./images/home/carousel/carousel4.png" alt="">
+            </div>
+            <div class="word_block">
+              <p>青醬舒肥雞胸</p>
+            </div>
+            <div class="original_block">$79</div>
+            <div class="sell_block">$69</div>
+            <div class="cart_block">
+              <button class="cart" type="button" name="button"><img src="./images/cart.png"</button>
+            </div>
           </div>
-        </li>
-      </ul>
+
+
+          <div class="swiper-slide">
+            <div class="img_block">
+              <img src="./images/home/carousel/carousel5.png" alt="">
+            </div>
+            <div class="word_block">
+              <p>日本和牛肩胛肉片(8oz)</p>
+            </div>
+            <div class="original_block">$1399</div>
+            <div class="sell_block">$1199</div>
+            <div class="cart_block">
+              <button class="cart" type="button" name="button"><img src="./images/cart.png"</button>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+      <div
+        style="--swiper-navigation-color: #FFF; --swiper-pagination-color: #FFF"
+        class="swiper mySwiper2"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <p>內含15種精選蔬菜，凡購買即贈送辛香料(蔥、薑、蒜頭、辣椒)</p>
+              <h1>前往選購</h1>
+              <div class="arrow">
+                <img src="./images/arrow_go.png" alt="箭頭">
+              </div>
+            </a>
+          </div>
+
+
+          <div class="swiper-slide">
+            <a href="#">
+              <p>濃稠的醬汁+鮮嫩的雞肉=白飯殺手！ 別忘了事先多煮些白飯哦！不用辛苦量醬料，在家也可以輕鬆完成。</p>
+              <h1>前往選購</h1>
+              <div class="arrow">
+                <img src="./images/arrow_go.png" alt="箭頭">
+              </div>
+            </a>
+          </div>
+
+
+          <div class="swiper-slide">
+            <a href="#">
+              <p>選用美國安格斯 CHOICE 無骨牛小排，四塊共21盎司牛小排為肋脊部位，運動量較少，肉質軟嫩且富含油脂及筋膜。</p>
+              <h1>前往選購</h1>
+              <div class="arrow">
+                <img src="./images/arrow_go.png" alt="箭頭">
+              </div>
+            </a>
+          </div>
+
+
+          <div class="swiper-slide">
+            <a href="#">
+              <p>雞胸肉採法式低溫舒肥熟成(溫度攝氏70度C)時間90分鐘。青醬以蒜泥、甜羅勒調入橄欖油和起司粉製成，香氣迷人，清爽可口。</p>
+              <h1>前往選購</h1>
+              <div class="arrow">
+                <img src="./images/arrow_go.png" alt="箭頭">
+              </div>
+            </a>
+          </div>
+
+
+          <div class="swiper-slide">
+            <a href="#">
+              <p>鹿兒島和宮崎位於日本南部，那裡的和牛以供應最佳血統公牛而享負盛名，因其肉質嫩滑，在牛肉甘香和油花分佈之間取得最佳平衡。</p>
+              <h1>前往選購</h1>
+              <div class="arrow">
+                <img src="./images/arrow_go.png" alt="箭頭">
+              </div>
+            </a>
+          </div>
+
+
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
 
     </main>
 
      <article class="article">
 
-      <a class="slogan1" href="#">
+      <a class="slogan1" href=./fresh.html>
         <div class="slogan_block1">
           <h1>煮夫煮婦買菜好幫手</h1>
           <p class="p1">打破新舊食材必須到傳統市場的觀念</p>
@@ -174,22 +282,22 @@
         </div>
       </a>
 
-       <a class="slogan2" href="#">
+       <a class="slogan2" href="./fresh.html">
         <div class="slogan_img">
-          <img src="./images/home/market.jpg" alt="market">
+          <img src="./images/home/home4.png" alt="market">
         </div>
       </a>
     </article>
 
 
     <article class="article1">
-      <a class="slogan3" href="#">
+      <a class="slogan3" href="./recipes.html">
         <div class="cabbage_img">
           <img src="./images/home/cabbage.jpg" alt="cabbage">
         </div>
       </a>
 
-      <a class="slogan4" href="#">
+      <a class="slogan4" href="./recipes.html">
         <div class="slogan_block2">
           <h1>上下班太累，沒時間買菜?</h1>
           <p class="p5">Daily Fresh先幫您準備</p>
@@ -201,30 +309,58 @@
       </a>
     </article>
 
-    <article class="article2">
 
+    <div class="title3">
       <h1>INSTGRAM</h1>
-      <div class="instgram_block">
+    </div>
 
-        <a href="#">
-          <div class="instgram_img">
-            <img src="./images/home/inst/inst1.jpg" alt="">
-          </div>
-        </a>
 
-        <a href="#">
-          <div class="instgram_img">
-            <img src="./images/home/inst/inst2.jpg" alt="">
-          </div>
-        </a>
+    <div class="instgram_block">
 
-        <a href="#">
-          <div class="instgram_img">
-            <img src="./images/home/inst/inst3.jpg" alt="">
-          </div>
-        </a>
-      </div>
-    </article>
+      <a href="#">
+        <div class="instgram_img">
+          <img src="./images/home/test/test1.png" alt="">
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="instgram_img">
+          <img src="./images/home/test/test2.png" alt="">
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="instgram_img">
+          <img src="./images/home/test/test3.png" alt="">
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="instgram_img">
+          <img src="./images/home/test/test4.png" alt="">
+        </div>
+      </a>
+
+
+      <a href="#">
+        <div class="instgram_img">
+          <img src="./images/home/test/test5.png" alt="">
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="instgram_img">
+          <img src="./images/home/test/test6.png" alt="">
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="instgram_img">
+          <img src="./images/home/test/test7.png" alt="">
+        </div>
+      </a>
+
+    </div>
 
 
 
@@ -269,13 +405,156 @@
           <a href="#"><img src="./images/fb.png" alt=""></a>
           <a href="#"><img src="./images/line.png" alt=""></a>
         </div>
-        <div class="statement">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:
+        <div class="statement">本網站為緯育TibaMe前端設計工程師班第70期學員專題作品，本平台僅供學習、展示之用。參考資源:
           <a href="https://www.xintian0423.com/">心田蔬果坊</a>、<a href="https://www.yfcfood.com/">鮮準珼</a>
           。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>
           ，後續會由專人協助處理。
         </div>
     </footer>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- 漢堡 -->
+
+    <script>
+      $(function(){
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function(){
+          $(this).toggleClass("is-active");
+        });
+
+      });
+    </script>
+
+    <!-- 漢堡縮放 -->
+
+    <script type="text/javascript">
+      $(function(){
+
+        $("button.hamburger").on("click", function(){
+          $("nav.main_nav").slideToggle();
+        });
+
+      });
+
+    </script>
+
+    <!-- banner蔬果 -->
+
+    <script type="text/javascript">
+
+      setTimeout(function(){
+        $("img.-loading1").addClass("redpepper");
+        $("img.-loading1").removeClass("-loading1");
+
+        $("img.-loading2").addClass("edamame");
+        $("img.-loading2").removeClass("-loading2");
+
+        $("img.-loading3").addClass("tomato");
+        $("img.-loading3").removeClass("-loading3");
+
+        $("img.-loading4").addClass("edamame1");
+        $("img.-loading4").removeClass("-loading4");
+
+        $("img.-loading5").addClass("orange");
+        $("img.-loading5").removeClass("-loading5");
+
+        $("img.-loading6").addClass("yellowpepper");
+        $("img.-loading6").removeClass("-loading6");
+
+      },1000);
+
+    </script>
+
+
+
+    <!-- 熱門商品輪播 -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 5,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+        thumbs: {
+          swiper: swiper,
+        },
+        breakpoints: {
+              300: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+
+               575.98: {
+                 slidesPerView: 1,
+                 spaceBetween: 0,
+               },
+               768: {
+                 slidesPerView: 2,
+                 spaceBetween: 5,
+               },
+               1024: {
+                 slidesPerView: 3,
+                 spaceBetween: 5,
+               },
+             },
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 5,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+
+
+
+
+
+
+    <!-- ins輪播 -->
+
+    <script>
+      $('.instgram_block').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: false,
+        autoplaySpeed: 1500,
+         responsive: [
+     {
+       breakpoint: 768,
+       settings: {
+         slidesToShow: 2,
+         slidesToScroll: 2,
+         infinite: true,
+         dots: false
+       }
+     },
+     {
+       breakpoint: 576,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         infinite: true,
+         dots: false
+       }
+     },
+
+     ]
+      });
+    </script>
 
   </body>
 </html>

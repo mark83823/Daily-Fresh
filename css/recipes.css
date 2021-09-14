@@ -12,15 +12,61 @@ header.header nav.nav ul.link_list > li div.recipes_block a.-on{
 
 div.main_block{
   /* border: 1px solid red; */
-  height: 1500px;
+  /* height: 1500px; */
   background-color: #FFFFDF;
   padding-top: 80px;
   padding-bottom: 50px;
+  position: relative;
 }
+
+@media (min-width: 1400px){
+  div.main_block{
+    width: 1320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px){
+  div.main_block{
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  div.main_block{
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  div.main_block{
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width:767.98px){
+  div.main_block{
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575.98px){
+  div.main_block{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+
 
 div.main_block div.inner_block{
   /* border: 1px solid green; */
-  width: 1200px;
+  /* width: 1200px; */
   font-size: 0;
 }
 
@@ -33,12 +79,34 @@ div.main_block div.inner_block aside.aside, div.main_block div.inner_block main.
 div.main_block div.inner_block aside.aside{
   /* border: 1px solid purple; */
   width: 250px;
-  margin-right: 85px;
+  margin-right: 60px;
 }
+
+@media (max-width: 900px){
+ div.main_block div.inner_block aside.aside{
+   display: none;
+ }
+}
+
+
 
 div.main_block div.inner_block main.main{
   /* border: 1px solid orange; */
-  width: calc(100% - 250px - 85px)
+  width: calc(100% - 250px - 60px)
+}
+
+@media (min-width: 768px) and (max-width: 899.98px){
+ div.main_block div.inner_block main.main{
+   width: 600px;
+   margin: 0 auto;
+ }
+}
+
+@media (max-width: 767.98px){
+div.main_block div.inner_block main.main{
+ /* border: 3px solid orange; */
+ width: 100%;
+ }
 }
 
 
@@ -51,7 +119,6 @@ aside.aside form.search_list{
 aside.aside form.search_list div.search_bar{
   /* border: 1px solid blue; */
   margin-left: 20px;
-  position: relative;
 }
 
 aside.aside form.search_list div.search_bar > input{
@@ -60,11 +127,11 @@ aside.aside form.search_list div.search_bar > input{
 }
 
 aside.aside form.search_list div.search_bar button.search_btn1{
-  /* border: 1px solid blue; */
+  /* border: 1px solid orange; */
   background-color: #ffffff;
   position: absolute;
-  top: 4px;
-  right: 42px;
+  top: 93px;
+  left: 176px;
   padding: 0;
   border: 0;
   cursor: pointer;
@@ -120,6 +187,11 @@ main.main ul.product_list > li > a{
   text-decoration: none;
   width: 250px;
   box-shadow: 0 0 5px gray;
+  overflow: hidden;
+}
+
+main.main ul.product_list > li > a:hover div.fresh_img > img{
+  transform: scale(1.1, 1.1);
 }
 
 main.main ul.product_list > li > a > h1.product_name{
@@ -139,6 +211,7 @@ main.main ul.product_list > li > a div.fresh_img{
 main.main ul.product_list > li > a div.fresh_img > img{
   width: 250px;
   height: 200px;
+  transition: transform 1s;
 }
 
 main.main ul.product_list > li > a div.price_block{
@@ -185,27 +258,78 @@ main.main ul.product_list > li > a div.cart_block button.cart_btn2 > img{
 
 /*分頁*/
 
-main.main div.pagination_block{
-  /* border: 1px solid red; */
-  display: inline-block;
-  margin-top: 40px;
+section.page{
+  background-color: #FFFFDF;
+  /* border: 3px solid black; */
+  margin-bottom: 100px;
+  text-align: center;
 }
 
-main.main div.pagination_block ul.pagination{
+@media (min-width: 1400px){
+  section.page{
+    width: 1320px;
+    margin: 20px auto 100px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px){
+  section.page{
+    width: 1140px;
+    margin: 20px auto 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  section.page{
+    width: 960px;
+    margin: 20px auto 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  section.page{
+    width: 720px;
+    margin: 20px auto 100px;
+  }
+}
+
+@media (min-width: 576px) and (max-width:767.98px){
+  section.page{
+    width: 540px;
+    margin: 20px auto 100px;
+  }
+}
+
+@media (max-width: 575.98px){
+  section.page{
+    width: 100%;
+    margin: 20px auto 100px;
+  }
+}
+
+
+section.page div.pagination_block{
   /* border: 1px solid red; */
+  display: inline-block;
+  /* margin: 30px 0 90px 205px; */
+  text-align: center;
+}
+
+section.page div.pagination_block ul.pagination{
+  /* border: 1px solid blue; */
   list-style: none;
-  margin-left: 230px;
+  /* margin-left: 230px; */
   padding: 0;
   font-size: 0;
 
 }
 
-main.main div.pagination_block ul.pagination > li{
+section.page div.pagination_block ul.pagination > li{
   /* border: 1px solid green; */
   display: inline-block;
 }
 
-main.main div.pagination_block ul.pagination > li > a{
+section.page div.pagination_block ul.pagination > li > a{
   text-decoration: none;
   font-size: 16px;
   display: inline-block;
@@ -214,15 +338,35 @@ main.main div.pagination_block ul.pagination > li > a{
   color: #232323;
 }
 
-main.main div.pagination_block ul.pagination > li > a:hover,
-main.main div.pagination_block ul.pagination > li > a.-on{
+section.page div.pagination_block ul.pagination > li > a:hover,
+section.page div.pagination_block ul.pagination > li > a.-on{
   color: #043CFC;
 }
 
-main.main div.pagination_block ul.pagination > li:first-child > a{
+section.page div.pagination_block ul.pagination > li:first-child > a{
   transform: translateY(8px);
 }
 
-main.main div.pagination_block ul.pagination > li:last-child > a{
+section.page div.pagination_block ul.pagination > li:last-child > a{
   transform: translateY(8px);
+}
+
+@media (max-width: 575.98px){
+section.page div.pagination_block ul.pagination > li:nth-child(7){
+  display: none;
+}
+
+@media (max-width: 575.98px){
+section.page div.pagination_block ul.pagination > li:nth-child(8){
+  display: none;
+}
+
+@media (max-width: 575.98px){
+section.page div.pagination_block ul.pagination > li:nth-child(9){
+  display: none;
+}
+
+@media (max-width: 575.98px){
+section.page div.pagination_block ul.pagination > li:nth-child(10){
+  display: none;
 }

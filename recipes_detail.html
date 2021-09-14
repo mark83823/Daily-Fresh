@@ -2,8 +2,11 @@
 <html lang="zh-Hant" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>做飯靈感-Daily Fresh</title>
     <link rel="stylesheet" href="./css/recipes_detail.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./vendors/hamburgers.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -29,9 +32,9 @@
               </ul>
             </div>
           </li>
-          <li><a href="#" >健康新知</a></li>
-          <li><a href="#" class="-on">訂購流程</a></li>
-          <li><a href="#">關於我們</a></li>
+          <li><a href="./magazine.html" >健康新知</a></li>
+          <li><a href="./order.html" class="-on">訂購流程</a></li>
+          <li><a href="./about.html">關於我們</a></li>
         </ul>
 
         <div class="main_btn">
@@ -44,9 +47,30 @@
           <div class="login_btn">
             <img src="./images/login.png" alt="登入按鈕">
           </div>
+
+          <!-- 漢堡按鈕 -->
+
+          <button class="hamburger hamburger--squeeze" type="button">
+           <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+           </span>
+         </button>
+
         </div>
       </nav>
     </header>
+
+      <nav class="main_nav">
+        <ul class="nav_list">
+          <li><a href="./fresh.html">生鮮</a></li>
+          <li><a href="./recipes.html">做飯靈感</a></li>
+          <li><a href="./magazine.html">健康新知</a></li>
+          <li><a href="./order.html">訂購流程</a></li>
+          <li><a href="./about.html">關於我們</a></li>
+        </ul>
+      </nav>
+
+
 
 
     <section class="sec1">
@@ -73,7 +97,7 @@
               <input type="number" class="buy_count" value="1" min="1">
             </div>
             <div class="btn_block">
-              <button type="button" class="btn1" name="button">加入購物車</button>
+              <button type="submit" class="btn1" name="button">加入購物車</button>
               <button type="button" class="btn2" name="button">立即購買</button>
             </div>
           </form>
@@ -146,7 +170,7 @@
 
     <section class="video_block">
       <div class="video">
-        <iframe width="750" height="515"  src="https://www.youtube.com/embed/AJhbMXwDZAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
+        <iframe   src="https://www.youtube.com/embed/AJhbMXwDZAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe>
       </div>
     </section>
 
@@ -160,8 +184,9 @@
         <div class="title1">
           <p>一起跟著做</p>
         </div>
+
         <div class="top3">
-          <div class="follow_block1">
+          <div  class="follow_block1" data-aos="fade-right" data-aos-once="true" data-aos-duration="2000" >
             <div class="follow_img">
               <img src="./images/recipes/recipes16.jpg">
             </div>
@@ -171,7 +196,7 @@
           </div>
 
 
-          <div class="follow_block2">
+          <div class="follow_block2" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000">
             <div class="follow_img">
               <img src="./images/recipes/recipes17.jpg">
             </div>
@@ -181,7 +206,7 @@
           </div>
 
 
-          <div class="follow_block3">
+          <div class="follow_block3" data-aos="fade-left" data-aos-once="true" data-aos-duration="2000">
             <div class="follow_img">
               <img src="./images/recipes/recipes18.jpg">
             </div>
@@ -192,7 +217,7 @@
         </div>
 
         <div class="top2">
-          <div class="follow_block4">
+          <div class="follow_block4" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000">
             <div class="follow_img">
               <img src="./images/recipes/recipes19.jpg">
             </div>
@@ -202,7 +227,7 @@
           </div>
 
 
-          <div class="follow_block5">
+          <div class="follow_block5" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000">
             <div class="follow_img">
               <img src="./images/recipes/recipes20.jpg">
             </div>
@@ -210,7 +235,7 @@
               <p>5、加入九層塔翻炒再倒入剩下<br>的米酒包即可起鍋。</p>
             </div>
           </div>
-        </div>>
+        </div>
 
 
 
@@ -262,11 +287,44 @@
           <a href="#"><img src="./images/fb.png" alt=""></a>
           <a href="#"><img src="./images/line.png" alt=""></a>
         </div>
-        <div class="statement">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:
+        <div class="statement">本網站為緯育TibaMe前端設計工程師班第70期學員專題作品，本平台僅供學習、展示之用。參考資源:
           <a href="https://www.xintian0423.com/">心田蔬果坊</a>、<a href="https://www.yfcfood.com/">鮮準珼</a>
           。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>
           ，後續會由專人協助處理。
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- 漢堡 -->
+
+    <script>
+      $(function(){
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function(){
+          $(this).toggleClass("is-active");
+        });
+
+      });
+    </script>
+
+    <!-- 漢堡縮放 -->
+
+    <script type="text/javascript">
+      $(function(){
+
+        $("button.hamburger").on("click", function(){
+          $("nav.main_nav").slideToggle();
+        });
+
+      });
+
+    </script>
+
   </body>
 </html>

@@ -2,8 +2,10 @@
 <html lang="zh-Hant" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>健康新知-Daily Fresh</title>
     <link rel="stylesheet" href="./css/magazine.css">
+    <link href="./vendors/hamburgers.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -44,9 +46,30 @@
           <div class="login_btn">
             <img src="./images/login.png" alt="登入按鈕">
           </div>
+
+          <!-- 漢堡按鈕 -->
+
+          <button class="hamburger hamburger--squeeze" type="button">
+           <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+           </span>
+         </button>
+
+
+
         </div>
       </nav>
     </header>
+
+      <nav class="main_nav">
+        <ul class="nav_list">
+          <li><a href="./fresh.html">生鮮</a></li>
+          <li><a href="./recipes.html">做飯靈感</a></li>
+          <li><a href="./magazine.html">健康新知</a></li>
+          <li><a href="./order.html">訂購流程</a></li>
+          <li><a href="./about.html">關於我們</a></li>
+        </ul>
+      </nav>
 
     <section class="banner_bg">
       <img src="./images/magazine/magazine_banner.png" alt="banner">
@@ -69,7 +92,7 @@
 
             <div class="word_block">
 
-              <div class="t1">
+              <div class="t1" >
                 <h1>168斷食不是空腹越久瘦越快</h1>
               </div>
 
@@ -96,12 +119,12 @@
             <div class="word_block1">
 
               <div class="t1">
-                <h1>酪梨7大功效讓全身都健康！</h1>
+                <h1>吃酪梨讓全身都健康！</h1>
               </div>
 
               <div class="p1">
                 <p class="p2">酪梨的脂肪中多是單元不飽和脂肪，科學家認為這可預防
-                心血管疾病和某些癌症。酪梨還含維生素...
+                心血管疾病和某些癌症。
                 </p>
               </div>
 
@@ -116,7 +139,7 @@
             <div class="word_block2">
 
               <div class="t1">
-                <h1>吃玉米的好處和壞處 它好處多也不能多吃</h1>
+                <h1>吃玉米的好處和壞處</h1>
               </div>
 
               <div class="p1">
@@ -144,7 +167,7 @@
         </div>
         <div class="fe -right1">
           <h2>蔬食新手怎麼當？八大建議讓你輕鬆轉換飲食習慣</h2>
-          <p>不管是什麼原因想嘗試無肉飲食，忠於內心很重要，用不著強求自己一夜之間葷轉素，過於壓抑自己的慾望後的爆發是很可怕的！我建議漸進式的改，從一週一天或一天一餐開始，但必須謹記著自己嘗試改變的原因，有意識、無壓力地逐步做出改變，按照自己的步調去適應及調整...
+          <p>不管是什麼原因想嘗試無肉飲食，忠於內心很重要，用不著強求自己一夜之間葷轉素，過於壓抑自己的慾望後的爆發是很可怕的！我建議漸進式的改變，從一週一天或一天一餐開始，但必須謹記著自己嘗試改變的原因，有意識、無壓力地逐步做出改變，按照自己的步調去適應及調整，並認真觀察身心狀況，如果哪一天真的忍不住想吃肉，那就吃吧！這個時候，身體是會告訴你實話的。轉換飲食習慣最大的困難便是「口腹之慾」，肉的鮮美跟咬勁讓許多人難以放棄，要是能找到完美的替代品，就能大大降低門檻啦！其實許多豆製品和菇類
           </p>
         </div>
       </div>
@@ -156,9 +179,7 @@
         </div>
         <div class="fe -right1">
           <h2>蘆筍抗癌又燃脂，初夏吃蘆筍營養多6倍！</h2>
-          <p>春季到初夏時節是蘆筍的產季，這個時期的蘆筍透過露天栽培，
-            且今年氣候宜人，經過陽光的照射下，不僅鮮脆甜，維生素的含量也特別高
-            ，可抗動脈硬化的蘆丁更是冬季的6.7倍...
+          <p>蘆筍含硒，可抑制癌細胞生成，更能治療癌症硒在許多研究中都被指出具有抗癌的效果，菁英診所的劉博仁醫師就曾撰文提到，硒可以幫助人體生成抗氧化酵素，保護細胞和胞器的膜，預防核酸變性，並抑制發炎、減少癌細胞生成的機會與促使癌細胞凋亡。蘆筍中的β-胡蘿蔔素可預防乾眼症、夜盲症，更可防癌β-胡蘿蔔素除了可在體內轉化為維生素A，預防眼睛疾病，如乾眼症、夜盲症外，同時還是天然的抗氧化劑，可與自由基反應結合，抑制生成癌細胞，還可增強免疫力，對於預防心肌梗塞與中風有很好的效果感清甜，質地也較脆嫩，適合做成
           </p>
         </div>
       </div>
@@ -172,7 +193,11 @@
           <h2>煮錯就白吃了！紅蘿蔔這樣吃營養吸收率多8倍！</h2>
           <p>與肉類一起燉滷時，先整根煮熟後，再切塊放入鍋中與肉類一起燉煮幾分鐘。
             據英國學者研究發現，先燉熟再切塊，可使胡蘿蔔中的營養物質比「先切再煮」
-            增加1/4 倍...
+            增加1/4 倍紅蘿蔔根據部位不同，營養素、質地和口感也略有差異！舉例來說：
+            能長出葉子的頂部3～5公分處，水分較少，質地偏硬，比較適宜切絲爆炒或燉湯；
+            中段的糖分含量較高，口感清甜，質地也較脆嫩，適合做成沙拉或涼拌菜；
+            至於外形尖細尾部，通常「紅蘿蔔味」最為明顯，也是澱粉酶含量最多的部位，既可保健腸胃，也能幫助消化
+            若不愛其獨特苦澀味，可透過醃漬
           </p>
       </div>
     </section>
@@ -237,11 +262,45 @@
           <a href="#"><img src="./images/fb.png" alt=""></a>
           <a href="#"><img src="./images/line.png" alt=""></a>
         </div>
-        <div class="statement">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:
+        <div class="statement">本網站為緯育TibaMe前端設計工程師班第70期學員專題作品，本平台僅供學習、展示之用。參考資源:
           <a href="https://www.xintian0423.com/">心田蔬果坊</a>、<a href="https://www.yfcfood.com/">鮮準珼</a>
           。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>
           ，後續會由專人協助處理。
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function(){
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function(){
+          $(this).toggleClass("is-active");
+        });
+
+      });
+    </script>
+
+    <!-- 漢堡縮放 -->
+
+    <script type="text/javascript">
+      $(function(){
+
+        $("button.hamburger").on("click", function(){
+          $("nav.main_nav").slideToggle();
+        });
+
+      });
+
+    </script>
+
+
+
+
+
+
+
+
+
   </body>
 </html>

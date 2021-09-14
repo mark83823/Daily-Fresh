@@ -6,6 +6,12 @@ html{
 }
 body{
   margin: 0  auto;
-  width: 1200px;
-  font-family:"Noto Sans TC"
+  /* width: 1200px; */
+  width: 100%;
+  /* height: auto; */
+  font-family: "Noto Sans TC";
+  background-color: #FFFFDF;
+}
+img{
+  max-width: 100%;
 }

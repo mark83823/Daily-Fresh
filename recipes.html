@@ -2,8 +2,10 @@
 <html lang="zh-Hant" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>做飯靈感-Daily Fresh</title>
     <link rel="stylesheet" href="./css/recipes.css">
+    <link href="./vendors/hamburgers.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -44,10 +46,30 @@
           <div class="login_btn">
             <img src="./images/login.png" alt="登入按鈕">
           </div>
+          <!-- 漢堡按鈕 -->
+
+          <button class="hamburger hamburger--squeeze" type="button">
+           <span class="hamburger-box">
+             <span class="hamburger-inner"></span>
+           </span>
+         </button>
+
+
+
         </div>
       </nav>
 
     </header>
+
+      <nav class="main_nav">
+        <ul class="nav_list">
+          <li><a href="./fresh.html">生鮮</a></li>
+          <li><a href="./recipes.html">做飯靈感</a></li>
+          <li><a href="./magazine.html">健康新知</a></li>
+          <li><a href="./order.html">訂購流程</a></li>
+          <li><a href="./about.html">關於我們</a></li>
+        </ul>
+      </nav>
 
     <section class="banner_bg">
       <img src="./images/recipes/recipes_banner.png" alt="banner">
@@ -77,6 +99,7 @@
         </aside>
 
         <!-- 商品列表 -->
+
 
         <main class="main">
           <ul class="product_list">
@@ -272,27 +295,27 @@
               </a>
             </li>
           </ul>
-
-
-          <div class="pagination_block">
-            <ul class="pagination">
-              <li><a href="#"><img src="./images/arrow_left.png"></a></li>
-              <li><a href="#" class="-on">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">6</a></li>
-              <li><a href="#">7</a></li>
-              <li><a href="#">8</a></li>
-              <li><a href="#">9</a></li>
-              <li><a href="#"><img src="./images/arrow_right.png"></a></li>
-            </ul>
-          </div>
-
         </main>
       </div>
     </div>
+
+    <section class="page">
+      <div class="pagination_block">
+        <ul class="pagination">
+          <li><a href="#"><img src="./images/arrow_left.png"></a></li>
+          <li><a href="#" class="-on">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li><a href="#"><img src="./images/arrow_right.png"></a></li>
+        </ul>
+      </div>
+    </section>
 
     <footer class="footer">
       <a href="./index.html" class="footer_logo"><img src="./images/logo_img.png" alt="logo"></a>
@@ -334,11 +357,39 @@
           <a href="#"><img src="./images/fb.png" alt=""></a>
           <a href="#"><img src="./images/line.png" alt=""></a>
         </div>
-        <div class="statement">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:
+        <div class="statement">本網站為緯育TibaMe前端設計工程師班第70期學員專題作品，本平台僅供學習、展示之用。參考資源:
           <a href="https://www.xintian0423.com/">心田蔬果坊</a>、<a href="https://www.yfcfood.com/">鮮準珼</a>
           。若有侵權疑慮，您可以私訊<a href="https://www.facebook.com/webindex/">[TibaMe-前端設計工程師養成班]</a>
           ，後續會由專人協助處理。
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- 漢堡 -->
+
+    <script>
+      $(function(){
+
+        // hamburger icon 的切換
+        $("button.hamburger").on("click", function(){
+          $(this).toggleClass("is-active");
+        });
+
+      });
+    </script>
+
+    <!-- 漢堡縮放 -->
+
+    <script type="text/javascript">
+      $(function(){
+
+        $("button.hamburger").on("click", function(){
+          $("nav.main_nav").slideToggle();
+        });
+
+      });
+
+    </script>
+
   </body>
 </html>
